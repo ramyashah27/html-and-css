@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>flexbox css</title>
+    <style>
+        body{
+            background-color: green;
+        }
+    .container{
+        background-color: orange;
+        height: 544px;
+        width:  100%;
+         display: flex;
+        border: 2px solid black;
+        
+        /* flex-flow:row-reverse wrap; */
+        /* flex-direction: column; */
+        /* flex-direction: row-reverse; */
+        /* flex-direction: column-reverse; */
+      
+        /* justify-content: center; */
+        /* justify-content: space-between; */
+        /* justify-content: space-evenly; */
+        /* align-items: center; */
+    }
+    .item
+    {width: 200px;
+    height: 200px;
+    
+        background-color: tomato;
+        border: 2px solid darkred;
+        margin: 10px ;
+        padding: 3px;
+ 
+    }
+    #item1{
+        /* order:2; */
+        /* flex-grow: 4; */
+        flex-shrink: 4;
+        /* flex-basis: 550px; */
+ 
+    }
+    #item2{
+        align-self: flex-end;
+        /* align-self: flex-center; */
+        /* align-self: flex-start; */
+
+        
+    }   
+    #item3 {
+        align-self: flex-center;
+    }
+    </style>
+</head>
+<body>
+    <h1>how to use flexbox in css
+
+    </h1>
+    <div class="container">
+       <div class="item" id="item1">firstbox</div>
+       <div class="item" id="item2">secoundbox</div>
+       <div class="item" id="item3">THIRDbox</div>
+       <!-- <div class="item" id="item4">fourthbox</div>
+       <div class="item" id="item5">fifthbox</div>
+       <div class="item" id="item6">sixthbox</div> -->
+    </div>
+</body>
+</html>
